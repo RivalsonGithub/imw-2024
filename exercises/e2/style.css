@@ -1,0 +1,38 @@
+.painting-1{
+    display:grid;
+    width:600px;
+    height:600px;
+
+    /**/
+    border: 1px solid black;
+
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+}
+
+.cream {
+    background-color: #FEFCEE;
+}
+
+.red {
+    background-color: #FF3233;
+}
+
+.yellow {
+    background-color: #FED900;
+}
+
+.blue {
+    background-color: #0190BF;
+}
+
+.border-right {
+    border-right: 10px solid #51453C;
+}
+.border-left {
+    border-left: 10px solid #51453C;
+}
+.border-bottom {
+    border-bottom: 20px solid #51453C;
+}
