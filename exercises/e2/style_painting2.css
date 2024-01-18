@@ -1,0 +1,68 @@
+.painting-1{
+    display:grid;
+    width:600px;
+    height:600px;
+
+    /**/
+    border: 1px solid black;
+
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+}
+
+.darkBlue {
+    background-color: #2B394F;
+}
+
+.creamGreen {
+    background-color: #D9F0C7;
+}
+
+.yellow {
+    background-color: #FECE39;
+}
+
+.lightBlue {
+    background-color: #0882E4;
+}
+
+.midBlue {
+    background-color: #0542B3;
+}
+
+.green {
+    background-color: #28A16F;
+}
+
+.pink {
+    background-color: #FDD8D4;
+}
+
+.red {
+    background-color: #CB383F;
+}
+
+.orange {
+    background-color: #FD9A3B;
+}
+
+.black {
+    background-color: #1F1D20;
+}
+
+
+.border-top-blue {
+    border-top: 20px solid #0882E4;
+}
+
+.border-bottom_yellow {
+    border-bottom: 20px solid #FECE39;
+}
+.border-bottom_orange {
+    border-bottom: 20px solid #FD9A3B;
+}
+.border-bottom_red {
+    border-bottom: 20px solid #CB383F;
+}
+
