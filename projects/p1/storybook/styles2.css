@@ -5,80 +5,64 @@
 	margin-top: 0px;
     margin-left: 0px;
 	background-color: lightblue; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#cfecf7, #62c1e5, #1c96c5);
+    background-image: linear-gradient(#eeaf61, #ee5d6c, #6a0d83);
   }
 
-.tree_triangle_1_1 {
+
+
+  .building1 {
 	position:absolute;
 
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 250px solid #587e60;
+	height: 400px;
+	width: 150px;
+	background-color: #919492;
 
-	margin-top: 200px;
-    margin-left: 300px;
-
-  }
-  .tree_triangle_1_2 {
-	position:absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 125px solid transparent;
-	border-right: 125px solid transparent;
-	border-bottom: 250px solid #485e52;
-
-	margin-top: 350px;
-    margin-left: 275px;
-  }
-  .tree_triangle_2_1 {
-	position:absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 250px solid #587e60;
-
-	margin-top: 200px;
-    margin-left: 700px;
-
-  }
-  .tree_triangle_2_2 {
-	position:absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 125px solid transparent;
-	border-right: 125px solid transparent;
-	border-bottom: 250px solid #485e52;
-
-	margin-top: 350px;
-    margin-left: 675px;
-  }
-
-  .tree_trunk_1 {
-	position:absolute;
-
-	height: 200px;
-	width: 50px;
-	background-color: #725c42;
-
-	margin-top: 550px;
+	margin-top: 400px;
     margin-left: 370px;
   }
-  .tree_trunk_2 {
+  .building2 {
 	position:absolute;
 
-	height: 200px;
-	width: 50px;
-	background-color: #725c42;
+	height: 400px;
+	width: 350px;
+	background-color: #919492;
 
 	margin-top: 550px;
     margin-left: 770px;
   }
+  .building3 {
+	position:absolute;
+
+	height: 400px;
+	width: 170px;
+	background-color: #6c6f6d;
+
+	margin-top: 350px;
+    margin-left: 870px;
+  }
+  .building4 {
+	position:absolute;
+
+	height: 400px;
+	width: 50px;
+	background-color: #919492;
+
+	margin-top: 450px;
+    margin-left: 970px;
+  }
+  .building5 {
+	position:absolute;
+
+	height: 500px;
+	width: 100px;
+	background-color: #858886;
+
+	margin-top: 450px;
+    margin-left: 270px;
+  }
+
+
+
 
   .train_rect_left {
 	position:absolute;

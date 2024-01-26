@@ -5,20 +5,20 @@
 	margin-top: 0px;
     margin-left: 0px;
 	background-color: lightblue; /* For browsers that do not support gradients */
-    background-image: linear-gradient(#cfecf7, #62c1e5, #1c96c5);
+    background-image: linear-gradient(#87c1eb,#eeaf61, #ee5d6c);
   }
 
 .tree_triangle_1_1 {
 	position:absolute;
 
-	width: 0;
+	width: 0;	
 	height: 0;
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
 	border-bottom: 250px solid #587e60;
 
 	margin-top: 200px;
-    margin-left: 300px;
+    margin-left: 200px;
 
   }
   .tree_triangle_1_2 {
@@ -31,34 +31,9 @@
 	border-bottom: 250px solid #485e52;
 
 	margin-top: 350px;
-    margin-left: 275px;
+    margin-left: 175px;
   }
-  .tree_triangle_2_1 {
-	position:absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 250px solid #587e60;
-
-	margin-top: 200px;
-    margin-left: 700px;
-
-  }
-  .tree_triangle_2_2 {
-	position:absolute;
-
-	width: 0;
-	height: 0;
-	border-left: 125px solid transparent;
-	border-right: 125px solid transparent;
-	border-bottom: 250px solid #485e52;
-
-	margin-top: 350px;
-    margin-left: 675px;
-  }
-
+ 
   .tree_trunk_1 {
 	position:absolute;
 
@@ -67,18 +42,32 @@
 	background-color: #725c42;
 
 	margin-top: 550px;
-    margin-left: 370px;
+    margin-left: 270px;
   }
-  .tree_trunk_2 {
+
+  .hill1 {
 	position:absolute;
 
-	height: 200px;
-	width: 50px;
-	background-color: #725c42;
+	height: 280px;
+	width: 750px;
+	background-color: #3b612d;
+	border-radius: 50%;
 
 	margin-top: 550px;
-    margin-left: 770px;
+	margin-left: 850px;
   }
+  .hill2 {
+	position:absolute;
+
+	height: 260px;
+	width: 750px;
+	background-color: #5d8546;
+	border-radius: 50%;
+
+	margin-top: 600px;
+	margin-left: 450px;
+  }
+
 
   .train_rect_left {
 	position:absolute;
