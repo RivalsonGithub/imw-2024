@@ -1,0 +1,150 @@
+/* "*" apply to everything*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px; /* top right bottom left, clock wise*/
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.site-name {
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.site-name2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        font-size: 18px;
+
+        &:first-child {
+            margin-right: 44px;
+        }
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+    }
+
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 106px;
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+h4 {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: normal;
+    height: 100px;
+}
+
+.call-to-action {
+    text-transform: uppercase;
+}
+
+.sub-call-to-action {
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.info-section {
+    display: grid;
+    height: 300px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-section-item {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;     /* top right bottom left, clock wise*/
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: normal;
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+
+    &:nth-child(2) {
+        margin-top: 10px;
+    }
+    &:nth-child(3) {
+        margin-top: 10px;
+    }
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none; 
+}
