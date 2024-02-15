@@ -35,7 +35,7 @@ p {
 
 .site-name {
     font-size: 36px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-decoration: none;
     font-weight: bold;
 }
@@ -131,7 +131,6 @@ h4 {
     background-color: #0f0f10;
     display: flex;
     justify-content: left;
-    align-items: left;
     flex-direction: column;
 
     padding-top: 50px;
@@ -246,7 +245,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-    background-color: rgba(#000, 0.5);
+    /* background-color: rgba(#000, 0.5); */
     width: 100%;
     max-width: 600px;
     padding: 5px;
