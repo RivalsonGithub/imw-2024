@@ -87,6 +87,9 @@ button {
     &#blue {
         background-color: lightblue;
     }
+    &#purple {
+        background-color: purple;
+    }
 }
 
 #square {

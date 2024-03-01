@@ -7,23 +7,43 @@ const pinkCircle = document.getElementById("plum");
 const blueCircle = document.getElementById("blue");
 let interactionContainer = document.getElementById("interactionContainer");
 
-greenCIrcle.addEventListener("click", function(){
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightgreen";
+// greenCIrcle.addEventListener("click", function(){
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "lightgreen";
 
-    //Works for hexcode and RGB
-    // interactionContainer.style.backgroundColor = "#36d637";
-}) 
-pinkCircle.addEventListener("click", function(){
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "plum";
+//     //Works for hexcode and RGB
+//     // interactionContainer.style.backgroundColor = "#36d637";
+// }) 
+// pinkCircle.addEventListener("click", function(){
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "plum";
 
-}) 
-blueCircle.addEventListener("click", function(){
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightblue";
+// }) 
+// blueCircle.addEventListener("click", function(){
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "lightblue";
 
-}) 
+// })
+
+
+//Another option for the buttons using JQUery
+const colorBtns = document.querySelectorAll(".colors");
+console.log("number of buttons with the class COLORS",colorBtns.length);
+
+for(let i = 0; i < colorBtns.length; i++){
+
+    console.log(colorBtns[i]);
+    console.log(getComputedStyle(colorBtns[i]).backgroundColor);
+    colorBtns[i].addEventListener('click', function(){
+        interactionContainer.style.backgroundColor = getComputedStyle(colorBtns[i]).backgroundColor;
+    })
+
+    // if(1==0){
+    //     console.log("lightBlue");
+    // } else if (i == 1){
+    //     console.log("plum");
+    // }
+}
 
 //Loop Container
 let loopContainer = document.getElementById("loopContainer");
@@ -81,5 +101,6 @@ submitButton.addEventListener("click", function(event){
     }
 
 }) 
+
 
 
