@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Rose",
+      "description": "The rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae. It is widely cherished for its beauty, fragrance, and symbolism."
+    },
+    {
+      "name": "Sunflower",
+      "description": "The sunflower is an annual plant native to the Americas. It is known for its large flowering heads which turn to follow the sun's path, hence its name."
+    },
+    {
+      "name": "Lavender",
+      "description": "Lavender is a fragrant perennial herb belonging to the mint family. It is prized for its aromatic foliage and purple flowers, often used in aromatherapy and cooking."
+    },
+    {
+      "name": "Fern",
+      "description": "Ferns are a diverse group of non-flowering vascular plants that reproduce via spores. They are known for their feathery or waxy fronds and are commonly found in moist environments."
+    },
+    {
+      "name": "Cactus",
+      "description": "Cacti are succulent plants native to the Americas. They are adapted to arid environments, characterized by their thick, fleshy stems and spines."
+    }
+  ]
