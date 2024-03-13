@@ -23,7 +23,7 @@ let obj_local_2 = [
 //Using local obj array
 $(`body`).append(`<h1>${obj_local["header-text"]}</h1>`);
 
-for (let i =0; i < obj_local_2.length; i++){
+for (let i = 0; i < obj_local_2.length; i++) {
     console.log(obj_local_2[i].description, obj_local_2[i].name)
 
     $('body').append(
@@ -41,12 +41,12 @@ for (let i =0; i < obj_local_2.length; i++){
 //Using local JSON
 $(`body`).append(`<h1> Here are the contents from local JSON file</h1>`);
 fetch("plants.json")
-    .then(function (response){
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data){
+    .then(function (data) {
         console.log(data);
-        data.forEach(element =>{
+        data.forEach(element => {
             $('body').append(
                 `<div>
                     <h2>
@@ -60,26 +60,25 @@ fetch("plants.json")
         })
 
     })
-    .catch(function(error){
+    .catch(function (error) {
         $('body').append("ERROR");
     })
 
 //Using free public API (GHIBLI)
 fetch("https://ghibliapi.vercel.app/people")
-    .then(function(response){
+    .then(function (response) {
         $(`body`).append(`<h1> Here are the list of Ghibli movies! (API) </h1>`);
         return response.json();
     })
-    .then(function(data){
+    .then(function (data) {
         console.log(data);
         data.forEach(element => {
             console.log(element.name);
             $("body").append(element.name + "</br>");
         });
     })
-    .catch(function(error){
+    .catch(function (error) {
         $("body").append("ERROR");
     })
 
 
-    

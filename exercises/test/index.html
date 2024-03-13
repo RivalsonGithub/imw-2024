@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E7: JQuery</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Rate Monitor</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
+<div style="width:600px; height:400px;">
+    <canvas id="heartRateChart"></canvas>
+</div>
 
-      <div class = "clickme">I have a border, an outline, and a box shadow! Amazing, isn't it?</div>
+<script>
+// Sample heart rate data
+const data = {
+    labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
+    datasets: [{
+        label: 'Heart Rate (bpm)',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [73,73, 78, 70, 75, 73, 73, 73, 78, 70, 75,73,73],
+        fill: false,
+        tension: 0.1 // This makes the line a bit more 'curvy'
+    }]
+};
 
+const config = {
+    type: 'line',
+    data: data,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: false
+            }
+        }
+    }
+};
 
-    <script src="script.js"></script>
+var heartRateChart = new Chart(
+    document.getElementById('heartRateChart'),
+    config
+);
+</script>
+
 </body>
 </html>
