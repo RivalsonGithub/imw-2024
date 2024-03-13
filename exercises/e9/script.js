@@ -2,11 +2,11 @@ let size = 50;
 let randomValue;
 let mode = 0;
 
+// setup only once
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(random(255), random(255), random(255));
     rectMode(CENTER);
-
 
     print("test");
 
@@ -40,6 +40,7 @@ function draw() {
 }
 
 
+//If keypressed
 function keyPressed() {
     print(keyCode)
     if (keyCode == 82) {
