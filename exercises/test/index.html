@@ -3,46 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heart Rate Monitor</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<title>HTML Carousel</title>
+<style>
+.carousel {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+input[name="slide-toggle"] {
+  display: none;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+}
+
+.slide-label {
+  display: none;
+}
+
+.slide-toggle:checked + .slides .slide {
+  transform: translateX(-100%);
+}
+
+.slide-toggle:checked + .slides .slide:first-of-type {
+  transform: translateX(0%);
+}
+
+.slide-toggle:checked ~ .carousel-controls .slide-label {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-toggle:checked ~ .carousel-controls .slide-label:not(:checked) {
+  color: #888;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-controls label {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-controls label:hover {
+  color: #333;
+}
+</style>
 </head>
 <body>
 
-<div style="width:600px; height:400px;">
-    <canvas id="heartRateChart"></canvas>
+<div class="carousel">
+  <input type="radio" name="slide-toggle" id="slide1" checked>
+  <input type="radio" name="slide-toggle" id="slide2">
+  <input type="radio" name="slide-toggle" id="slide3">
+  
+  <div class="slides">
+    <div class="slide">
+      <img src="https://via.placeholder.com/300x150?text=Slide+1" alt="Slide 1" class="slide-image">
+    </div>
+    <div class="slide">
+      <img src="https://via.placeholder.com/300x150?text=Slide+2" alt="Slide 2" class="slide-image">
+    </div>
+    <div class="slide">
+      <img src="https://via.placeholder.com/300x150?text=Slide+3" alt="Slide 3" class="slide-image">
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <label for="slide1" class="slide-label">1</label>
+    <label for="slide2" class="slide-label">2</label>
+    <label for="slide3" class="slide-label">3</label>
+  </div>
 </div>
-
-<script>
-// Sample heart rate data
-const data = {
-    labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'],
-    datasets: [{
-        label: 'Heart Rate (bpm)',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [73,73, 78, 70, 75, 73, 73, 73, 78, 70, 75,73,73],
-        fill: false,
-        tension: 0.1 // This makes the line a bit more 'curvy'
-    }]
-};
-
-const config = {
-    type: 'line',
-    data: data,
-    options: {
-        scales: {
-            y: {
-                beginAtZero: false
-            }
-        }
-    }
-};
-
-var heartRateChart = new Chart(
-    document.getElementById('heartRateChart'),
-    config
-);
-</script>
 
 </body>
 </html>
