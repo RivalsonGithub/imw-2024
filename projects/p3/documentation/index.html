@@ -20,6 +20,7 @@
             <div class="section">
                 <h2>Ideation</h2>
                 <p>
+                    My interaction for this project is "Hover",
                     I took inspiration from my previous Reading 3 assignment and exapanded its functionalities to look better. It uses the same idea of my response website from Reading 3.
                     Each website links together to another website, like water drops touching each other constantly to form ocean.
                     Website trends and hype cycles are like ocean currents and the water cycle.
@@ -28,6 +29,13 @@
                     The deeper the ocean, the darker it gets.
                     The quantity of drops, like websites, creates new systems and circulations, akin to trends and directions in the digital space. 
                     One drop of water is not the ocean, but drops and drops of water together.
+                    <br>
+                    <br>
+                    <figure>
+                        <img src="images/img8.png" alt="This text should describe the image">
+                        <figcaption>Reading 3 website referencing</figcaption>
+                    </figure>
+
                     <br>
                     <br>
                     Here, instead of using basic hover to expand seperated spans in a paragraph. I seperated every word and locate them into their own table cells.
@@ -40,14 +48,52 @@
                     <br>
                     Users here can also click onto the texts, and the texts will be highlighted / frozen in black. 
                     The user can creatively string interesting phrases together by locking the right combination of words.
+
                     <br>
                     <br>
-                    Some of the risks would be the performance for mobile device, since it listens to every cell. It has some performance issue on my phone. 
-                    Mobile devices also do not have hover feature in this case. 
+                    Originall, I planned to create water droplet shape that contains the texts, however it might require me to manuelly 
+                    create a sentence of different length for each line. This would be too consuming, and it might not be able to provide 
+                    the final interactability the I was hoping to to achieve. Now that it is being distrubuted onto a table, it makes it look more
+                    organized and makes more sense as ocean.
                     <br>
                     <br>
+                    <figure>
+                        <img src="images/img7.png" alt="This text should describe the image">
+                        <figcaption>Sketch 1</figcaption>
+                    </figure>
+
+                    <br>
+                    <br>
+                    I have tested different colors, opacity, transition smoothness and finally got this final result.
+                    <br>
+                    <br>
+                    <h2>Progress</h2>
+                    <figure>
+                        <img src="images/img5.png" alt="This text should describe the image">
+                        <figcaption>Test 1</figcaption>
+                    </figure>
+                    <br>
+                    <br>
+                    <p>First, I build a grid of cells to test the functionalities. The border width is set to visible on purpose for debugging.</p>
+                    <figure>
+                        <img src="images/img6.png" alt="This text should describe the image">
+                        <figcaption>Test 2</figcaption>
+                    </figure>
+                    <br>
+                    <br>
+                    <p>Then, test the hovering feature. At this stage, it is detecting the cell and the text at the same time, which is not idea.</p>
+                    <br>
+                    <br>
+                    <p>Afterwards, I added a feature that inserts my pargraph as a string var into the table. It was done by splitting the paragraphs into one words strings.
+                        Then appen them individually into the table. I have set the table to 10 columns maximum by using the (i % 10 === 0), i for the length of the whole paragraphs.
+                    </p>
+                    <br>
+                    <br>
+                    
                     <a href="../index.html" target="_blank">Project 3 Interaction link</a>
                 </p>
+
+                <h2>Product</h2>
                 <!-- Start of image with caption -->
                 <figure>
                     <img src="images/img1.png" alt="This text should describe the image">
@@ -67,6 +113,13 @@
                 </figure>
 
                 <!-- End of image with caption -->
+
+                <br>
+                <br>
+                <p>Some of the risks would be the performance for mobile device, since it listens to every cell. It has some performance issue on my phone. 
+                    Mobile devices also do not have hover feature in this case. </p>
+
+
             </div>
             <!-- End of a section -->
             <!-- Start of a new section -->
