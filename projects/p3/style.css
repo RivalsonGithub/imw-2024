@@ -1,0 +1,46 @@
+ /* Style for table and cell */
+ html {
+    background: linear-gradient(to bottom, #4e88ff, #022c63);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    color: #8fc1ff;
+    opacity: 0.5;
+
+    padding: 10px;
+    transition: color 0.3s, font-size 0.3s;
+    /* Smooth transition for color and font size */
+}
+
+/* Style for hover effect */
+.hovered {
+    /* Change text color */
+    /* Increase text size */
+    color: rgb(68, 90, 188);
+    opacity: 1;
+    font-size: 28px;
+}
+
+.main {
+    /* Change text color */
+    /* Increase text size */
+    font-size: 35px;
+    color: white;
+    opacity: 1;
+}
+
+.click {
+    color: rgb(10, 9, 13);
+}
+
+
+table {
+    margin: 0 auto;
+    /* This centers the table horizontally */
+    border-collapse: collapse;
+    width: 80%;
+}
