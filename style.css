@@ -1,0 +1,173 @@
+html {
+    background-color: rgb(215, 197, 173);
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    height: 2000px;
+    /* just for demo to have enough scrolling */
+  }
+
+  .paragraph-box {
+    position: relative;
+    left: -300px;
+    top: 30%;
+    transform: translateY(-50%) rotate(0deg);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: left 0s ease, transform 0s ease;
+    background-image: url(resources/leather_texture.jpg);
+
+    width: 400px;
+    height: 600px;
+    margin-top: 600px;
+  }
+
+  .paragraph-box2 {
+    position: relative;
+    right: 300px;
+    top: 40%;
+    transform: translateY(-50%) rotate(0deg);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: right 0s ease, transform 0s ease;
+
+    width: 400px;
+    height: 500px;
+
+    margin-top: 200px;
+
+    background-image: url(resources/old_paper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+
+  .paragraph-box3 {
+    position: relative;
+    left: -300px;
+    top: 60%;
+    transform: translateY(-50%) rotate(0deg);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: left 0s ease, transform 0s ease;
+
+    width: 400px;
+    height: 400;
+
+    margin-top: 200px;
+
+    background-image: url(resources/wood_texture.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+
+  .footer {
+    margin: 100px;
+    color: white;
+    text-align: center;
+  }
+
+
+
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4ecdb;
+
+    border-radius: 8px;
+
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    margin-bottom: 10px;
+  }
+
+  .section a {
+    color: rgb(0, 0, 0);
+
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(214, 214, 214, 0.9);
+    opacity: 0.5;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+
+  }
+
+  .section a:hover {
+    background-color: #8a8a8a;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .white_Text {
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .big_Text {
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+  }
+
+  .boxShadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .BG_container {
+    position: relative;
+    width: 100%;
+    background-image: url(resources/map_texture.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    transition: filter 0.1s ease;
+    background-repeat: repeat-y;
+  }
+
+  /* Keyframe animation to animate blur */
+  @keyframes unblur {
+    from {
+      filter: blur(5px);
+    }
+
+    to {
+      filter: blur(0px);
+      /* Unblur */
+    }
+  }
+
+  /* Class to apply the animation */
+  .unblur-animation {
+    animation: unblur 1s ease forwards;
+    /* Animation properties */
+  }
